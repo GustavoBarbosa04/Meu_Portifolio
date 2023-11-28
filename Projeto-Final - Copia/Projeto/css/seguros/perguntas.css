@@ -1,0 +1,32 @@
+.perguntas-frequentes{
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.perguntas-frequentes h2{
+  margin-bottom: 60px;
+}
+.perguntas-frequentes dl div{
+  padding: 20px;
+}
+.perguntas-frequentes dt{
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  cursor: pointer;
+}
+.perguntas-frequentes dt::before{
+  content: "";
+    display: inline-block;
+    width: 15px;
+    height: 8px;
+    margin-right: 8px;
+    background-color: var(--p1);
+    transition: width 0.2s;
+}
+
+
+.perguntas-frequentes dd{
+  padding-top: 15px;
+  padding-left: 20px;
+  max-width: 70ch;
+}

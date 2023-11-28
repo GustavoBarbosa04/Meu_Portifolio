@@ -1,0 +1,52 @@
+.footer-bg{
+  background-color: var(--c12);
+}
+.footer{
+  display: grid;
+  grid-template-columns: 3fr 5fr 4fr;
+  gap: 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer ul{
+  margin-top: 40px;
+}
+.footer-contato ul{
+  margin-bottom: 32px;
+  
+}
+.footer li{
+  margin-bottom: 16px;
+}
+.footer-contato li:nth-child(even)::after{
+  content: "";
+  width: 80%;
+  height: 2px;
+  display: block;
+  background-color: var(--c10);
+  margin-top: 16px;
+}
+.contato-redes{
+  display: flex;
+  gap: 20px;
+}
+.footer-copy{
+  grid-column: 1/-1;
+  margin-top: 20px;
+  text-align: center;
+}
+.footer a:hover{
+  color: var(--c7);
+}
+
+@media (max-width: 800px) {
+
+  .footer img{
+    display: none;
+  }
+  .footer{
+     grid-template-columns: 1fr;
+     gap: 60px;
+  }
+ 
+}

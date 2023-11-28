@@ -1,0 +1,29 @@
+.parceiros{
+  padding-top: 80px;
+  padding-bottom: 120px;
+
+}
+.list-parceiros{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /*<- divide em 4 colunas de 1fr cada*/
+  max-width: 1400px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.list-parceiros li{
+  display: flex;
+  padding: 32px;
+}
+.parceiros h2{
+  text-transform: uppercase;
+}
+
+@media (max-width: 800px ) {
+  .list-parceiros{
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 20px;
+  }
+  .parceiros{
+    padding-bottom: 80px;
+  }
+}

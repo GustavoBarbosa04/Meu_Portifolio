@@ -1,0 +1,67 @@
+.Poppins-xxl{
+  font: 600 4rem/1.125 "Poppins", sans-serif;
+}
+.Poppins-xl{
+  font: 600 2rem/1.25 "Poppins", sans-serif;
+}
+.Poppins-l{
+  font: 400 1.5rem/1.5 "Poppins", sans-serif;
+}
+.Poppins-m-bold{
+  font: 600 1.125rem/1.35 "Poppins", sans-serif;
+}
+.Poppins-m{
+  font-family: 'Poppins', sans-serif;
+   font-size: 1.125rem;
+   font-weight: 400;
+}
+.Poppins-s{
+  font: 400 1rem/1.5 "Poppins", sans-serif;
+}
+.Poppins-xs-bold{
+  font: 400 0.75rem/1.35 "Poppins", sans-serif;
+}
+
+
+
+.Roboto-l-bold{
+  font: 500 2rem/1.25 "Roboto", sans-serif;
+  text-transform: uppercase;
+}
+
+.Roboto-l{
+  font-weight: 500;
+  letter-spacing: 0.015em;
+  font: 400 1.5rem/1.5 "Roboto", sans-serif;
+
+}
+.Roboto-m{
+  font: 500 1.125rem/1.35 "Roboto", sans-serif;
+}
+.Roboto-s{
+  font: 400 1rem/1.5 "Roboto", sans-serif;
+}
+.Roboto-xs{
+  font: 400 0.875rem/1.43 "Roboto", sans-serif;
+}
+
+@media (max-width: 1200px) {
+  .Poppins-xxl {
+    font-size: 3rem;
+  }
+  .Roboto-l,
+  .Roboto-l-bold {
+    font-size: 1.125rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .Poppins-xxl {
+    font-size: 2rem;
+  }
+  .Poppins-xl,
+  .Roboto-lx {
+    font-size: 1.5rem;
+  }
+}
+

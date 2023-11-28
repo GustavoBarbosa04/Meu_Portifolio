@@ -1,0 +1,135 @@
+.bicicleta{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 40px;
+  margin-bottom: 60px;
+  align-items: start;
+  margin-top: 60px;
+}
+.bicicleta-imagem{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+
+}
+
+/*grid de imagens*/
+.bicicleta-imagem img:first-child{
+  min-width: 100%;
+}
+.bicicleta-imagem img{
+  flex: 1;
+  min-width: 200px;
+}
+
+
+.conteudo-compra {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0 20px;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.conteudo-compra a{
+  grid-row: span 2; /*o elemento se expande por 2 alinhas*/
+  
+}
+.conteudo-compra span{
+  justify-self: start;
+  background-color: var(--c12 );
+  padding: 4px 10px;
+  border-radius: 5px ;
+  display: inline-flex; 
+  gap: 10px;
+}
+
+.bicicleta-conteudo h2{
+  margin-top: 50px;
+  margin-bottom:20px ;
+
+}
+.informacoes{
+  background-color: var(--c12);
+  border-radius: 10px;
+  padding: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+} 
+.informacoes img{
+  width: 30px;
+}
+.informacoes h3 {
+  margin-bottom: 20px
+}
+
+.ficha{
+  background-color: var(--c12);
+  border-radius: 10px;
+  padding: 30px;
+  gap: 30px;
+}
+.ficha li + li{
+  margin-top: 20px;
+}
+.ficha li{
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.ficha li::after{
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: var(--c8);
+  position: absolute;
+  bottom: -5px;
+}
+.ficha li:last-child::after{
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .bicicleta{
+    grid-template-columns: 1fr;
+    gap: 0 40px;
+
+  }
+  .bicicleta-imagem{
+    gap: 10px;
+    margin-bottom: 30px;
+  
+  }
+  /*grid de imagens*/
+
+.bicicleta-imagem img{
+  flex: 1;
+  min-width: 50px;
+}
+
+.conteudo-compra {
+  margin-top: 20px;
+  display: grid;
+  gap: 0 20px;
+}
+.conteudo-compra a{
+  padding-left: 40%;
+  padding-right: 40%;
+  text-align: center;
+  grid-column: 1/-1;
+  grid-row: 1;
+  margin-bottom: 20px;
+   /*o elemento se expande por 2 alinhas*/
+  
+}
+.conteudo-compra span{
+  background-color: var(--c12 );
+  padding: 4px 25px;
+  justify-self: center;
+}
+
+
+}
