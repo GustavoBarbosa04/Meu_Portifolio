@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+ 
+}
+body {
+  font-family: "Poppins",Arial, Helvetica, sans-serif;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  box-sizing: border-box;
+  
+  background-color: var(--rosa) ;
+  background-image: url(../images/bg-intro-desktop.png);
+}
+.conteiner {
+  box-sizing: border-box;
+  max-width: 1440px;
+  padding: 0px 20px;
+  margin: 0 auto;
+  
+}
+@media (max-width: 600px) {
+  .conteiner{
+    max-width: 375px;
+  }
+  body{ 
+    background-image: url(../images/bg-intro-mobile.png);
+    height: auto;
+    padding: 60px 0px;
+  }
+}

@@ -1,0 +1,60 @@
+.main{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+.texto{
+  max-width: 50ch ;
+  color: white;
+  display: grid;
+  gap: 20px;
+}
+.texto h1{
+  font-weight: 800;
+  font-size: 3rem;
+  line-height: 1.25;
+}
+.formulario{
+  display: grid;
+  gap: 20px;
+  font-family: "Poppins",Arial, Helvetica, sans-serif;
+}
+.formulario h3{
+  padding: 20px 40px;
+  background-color: var(--roxo);
+  border-radius: 10px;
+  box-shadow: 0 8px 4px hsl(0, 100%, 70%);
+  color: white;
+  font-weight: 400;
+  font-size: 1rem;
+  text-align: center;
+
+}
+span{
+  font-weight: 800;
+}
+.formulario p{
+  font-size: 1rem;
+  line-height: 1;
+  color: var(--cinza-azul);
+  font-family: "Roboto",Arial, Helvetica, sans-serif;
+}
+.formulario p a{
+  color: var(--rosa);
+  display: inline-block;
+  font-weight: 600;
+  text-decoration: none;
+
+}
+@media (max-width: 600px) {
+  .main{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 50px;
+    align-items: center;
+  }
+  .formulario p{
+    font-size: 0.8rem;
+  }
+}
