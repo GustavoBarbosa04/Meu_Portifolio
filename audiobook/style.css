@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap');
+* {
+  padding: 0px;
+  margin: 0px;
+}
+body {
+  background-image: linear-gradient(to bottom, #3b1566, #5f4da8);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #d6d6ea;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+}
+.faixa{
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  padding: 50px;
+  background-color: #5f4da8;
+  border-radius: 50px;  
+}
+.informacoes-faixa{
+  display: grid;
+  gap: 10px;
+  margin-top: 20px;
+  justify-items: center;
+}
+.informacoes-faixa h1{
+  
+  font-size: 32px;
+  font-weight: 500;
+} 
+.informacoes-faixa p{
+  font-size: 18px;
+  font-weight: 300;
+}
+.conteiner-buttons{
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+
+}
+.conteiner-buttons button{
+  font-size: 3rem;
+  background-color: transparent;
+  border: none;
+  color: #d6d6ea;
+}
+#play{
+  font-size: 4rem;
+}
+
+img{
+  display: block;
+  max-width: 100%;
+}
